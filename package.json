@@ -2,7 +2,7 @@
   "name": "portfolio_22",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/shubhamtalan996/portfolio_22",
+  "homepage": "https://shubhamtalan996.github.com/portfolio_22",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
