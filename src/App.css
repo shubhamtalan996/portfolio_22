@@ -36,12 +36,17 @@ header {
 }
 
 section {
-  grid-column: 2 / 8;
+  grid-column: 2 / 6;
   padding: 1rem;
   background: var(--dark-bg);
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
+}
+
+.globe-location {
+  grid-column: 7 / 12;
+  padding: 1rem;
 }
 
 blockquote {
@@ -61,4 +66,15 @@ blockquote p {
 
 .left {
   grid-column: 6 / 12;
+}
+
+.company-name {
+  color: white;
+}
+
+.boxup-link {
+  color: #f15a29;
+}
+.lybrate-link {
+  color: #c82506;
 }
