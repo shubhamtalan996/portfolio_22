@@ -9,7 +9,7 @@ const HomePage = () => {
         </header>
 
         <blockquote>
-          <p>I like making stuff and putting it on the internet</p>
+          <p>Transforming ideas into elegant web solutions.</p>
         </blockquote>
 
         <section>
@@ -27,8 +27,8 @@ const HomePage = () => {
 
         <blockquote>
           <p>
-            The best way out is always through <br />
-            -Robert Frost
+            The best way to predict the future is to create it.<br />
+            - Peter Drucker
           </p>
         </blockquote>
 
@@ -48,7 +48,7 @@ const HomePage = () => {
           </h3>
           <h4>~ e-Commerce</h4>
           <p>
-            Helped in building&nbsp;
+            Key contributor in building&nbsp;
             <a
               href="https://boxup.com"
               target="_blank"
@@ -60,8 +60,8 @@ const HomePage = () => {
             &nbsp; e-commerce website.
           </p>
           <p>
-            Website is built using ReactJS for client side code, with highly
-            customisable components using CDN. Worked on key features like
+            Website is built using NextJS, with highly
+            customisable components using CDN. Researched & Implemented methods to improve core web-vitals & UX.  Worked on key features like
             authentication, cart checkout, payments and segments for tracking
             user behaviour. Worked with GraphQL and Rest APIs for data. The
             project is strongly typed using TypeScript. Used Gitlab for code
