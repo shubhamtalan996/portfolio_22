@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { JPEG } from "../../assests";
+import { JPEG } from "../../assets";
 
 export const createAndRenderBackground = () => {
   const scene = new THREE.Scene();
@@ -31,6 +31,38 @@ export const createAndRenderBackground = () => {
   const torus = new THREE.Mesh(geometry, material);
 
   scene.add(torus);
+
+  //add skills geometry
+
+  // let geo = new THREE.IcosahedronGeometry(5, 1);
+
+  // const skillsGeometry = new THREE.WireframeGeometry(geo);
+
+  // const matLine = new THREE.LineBasicMaterial({
+  //   color: 0xffffff,
+  //   linewidth: 5, // in pixels
+  //   //resolution:  // to be set by renderer, eventually
+  //   dashed: false,
+  // });
+
+  // const wireframe = new THREE.WireframeGeometry(skillsGeometry, matLine);
+  // // wireframe.computeBoundingBox();
+  // // wireframe.scale.set(1, 1, 1);
+  // scene.add(wireframe);
+
+  // geo = new THREE.WireframeGeometry(geo);
+
+  // const matLineBasic = new THREE.LineBasicMaterial({ color: 0x4080ff });
+  // const matLineDashed = new THREE.LineDashedMaterial({
+  //   scale: 2,
+  //   dashSize: 1,
+  //   gapSize: 1,
+  // });
+
+  // const wireframe1 = new THREE.LineSegments(geo, matLineBasic);
+  // wireframe1.computeLineDistances();
+  // wireframe1.visible = false;
+  // scene.add(wireframe1);
 
   // adding light
 
@@ -100,18 +132,20 @@ export const createAndRenderBackground = () => {
   moon.position.z = 30;
   moon.position.setX(-10);
 
+  myImage.position.z = -5;
+  myImage.position.x = 2;
+
   //move camera
 
   function moveCamera() {
-    console.log("here");
     const t = document.body.getBoundingClientRect().top;
 
-    moon.rotation.x += 0.05;
+    // moon.rotation.x += 0.05;
     moon.rotation.y += 0.075;
-    moon.rotation.z += 0.05;
+    // moon.rotation.z += 0.05;
 
     myImage.rotation.y += 0.01;
-    myImage.rotation.z += 0.01;
+    // myImage.rotation.z += 0.01;
 
     camera.position.x = t * -0.0002;
     camera.position.y = t * -0.0002;

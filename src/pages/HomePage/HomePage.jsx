@@ -1,4 +1,27 @@
 import "../../App.css";
+import { SVG } from "../../assets";
+
+const socialMediaLinks = [
+  {
+    key: "github",
+    alt: "github link",
+    src: SVG.github,
+    link: "https://github.com/shubhamtalan996",
+  },
+  {
+    key: "linkedin",
+    alt: "linkedin link",
+    src: SVG.linkedin,
+    link: "https://www.linkedin.com/in/shubhamtalan/",
+  },
+  {
+    key: "instagram",
+    alt: "instagram link",
+    src: SVG.instagram,
+    link: "https://www.instagram.com/shubham_talan_/?hl=en",
+  },
+];
+
 const HomePage = () => {
   return (
     <div className="App">
@@ -14,12 +37,18 @@ const HomePage = () => {
 
         <section>
           <h2>📜 Manifesto</h2>
-          <p>I am web developer based in Delhi.</p>
+          <p>
+            I am a Web Developer based in Delhi, India. My passion lies in
+            building user-friendly, responsive, and scalable web applications.
+          </p>
 
           <p>
-            I like to build web-applications which are user friendly, responsive
-            and scalable. Web is a ocean of technologies on which i am sailor
-            with desire to learn and explore new and interesting things.
+            The vast ocean of web technologies fascinates me, and I consider
+            myself a sailor with an insatiable desire to learn and explore new
+            and intriguing concepts. With an adventurous spirit, I eagerly
+            embrace new challenges and continuously seek opportunities to
+            enhance my skills and knowledge in the dynamic world of web
+            development.
           </p>
         </section>
 
@@ -27,8 +56,8 @@ const HomePage = () => {
 
         <blockquote>
           <p>
-            The best way to predict the future is to create it.<br />
-            - Peter Drucker
+            The best way to predict the future is to create it.
+            <br />- Peter Drucker
           </p>
         </blockquote>
 
@@ -60,12 +89,13 @@ const HomePage = () => {
             &nbsp; e-commerce website.
           </p>
           <p>
-            Website is built using NextJS, with highly
-            customisable components using CDN. Researched & Implemented methods to improve core web-vitals & UX.  Worked on key features like
-            authentication, cart checkout, payments and segments for tracking
-            user behaviour. Worked with GraphQL and Rest APIs for data. The
-            project is strongly typed using TypeScript. Used Gitlab for code
-            maintainance and CI-CD workflows. Used netflify for deployments.
+            Website is built using NextJS, with highly customisable components
+            using CDN. Researched & Implemented methods to improve core
+            web-vitals & UX. Worked on key features like authentication, cart
+            checkout, payments and segments for tracking user behaviour. Worked
+            with GraphQL and Rest APIs for data. The project is strongly typed
+            using TypeScript. Used Gitlab for code maintainance and CI-CD
+            workflows. Used netflify for deployments.
           </p>
 
           <h3>
@@ -117,9 +147,26 @@ const HomePage = () => {
           </p>
         </section>
 
-        <blockquote>
-          <p>Thanks for watching!</p>
-        </blockquote>
+        <footer>
+          <p>Feel free to react out!</p>
+          <div className="social-links">
+            {socialMediaLinks && socialMediaLinks?.length ? (
+              socialMediaLinks.map(({ key, alt, link, src }) => (
+                <div className="image">
+                  <a key={key} href={link} rel="noreferrer" target="_blank">
+                    <img alt={alt} src={src} className="social-img" />
+                  </a>
+                </div>
+              ))
+            ) : (
+              <></>
+            )}
+          </div>
+          <span className="contact-info">
+            <p>📞&nbsp;+91-8595398234</p>&nbsp;&nbsp;&#183;&nbsp;&nbsp;
+            <p> ✉️&nbsp;talan.vader@gmail.com</p>
+          </span>
+        </footer>
       </main>
     </div>
   );
