@@ -164,7 +164,7 @@ const HomePage = () => {
           </div>
           <span className="contact-info">
             <p>📞&nbsp;+91-8595398234</p>&nbsp;&nbsp;&#183;&nbsp;&nbsp;
-            <p> ✉️&nbsp;talan.vader@gmail.com</p>
+            <p> ✉️&nbsp;me@shubhamtalan.com</p>
           </span>
         </footer>
       </main>
